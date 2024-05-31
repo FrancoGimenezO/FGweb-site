@@ -319,10 +319,10 @@ p {
   width: 30%;
   padding: 15px;
   margin: 5% auto;
-  background-color: rgba(199, 195, 195, 0.962);
+  background-color: transparent;
   border-radius: 8px;
   font-family: sans-serif;
-  box-shadow: 0 0 45px 0 black;
+  box-shadow: 0 0 50px 0px rgba(213, 216, 226, 0.267);
 }
 
 .form__input{
@@ -333,7 +333,7 @@ input, textarea{
   padding: 10px;
   border-radius: 5px;
   width: 100%;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.358);
+  box-shadow: 0 0 10px 0 rgb(30, 42, 75);
   box-sizing: border-box;
 }
 
@@ -350,11 +350,10 @@ textarea{
   padding: 5px;
   font-family: sans-serif;
   box-sizing: border-box;
-  form-sizing: content;
 }
 
 label{
-  color: black;
+  color: white;
   text-align: left;
   font-weight: bold;
   padding: 10px;
