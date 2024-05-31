@@ -6,18 +6,26 @@
 
         <h2 class="aboutext animate__animated animate__backInLeft">CONTACTO</h2>
 
-        <div class="contacto animate__animated animate__backInRight">
-            <p>Dejame tus consultas aqui:</p>
-            <textarea class="consult" placeholder="Dejame tus consultas aquí" minlength="50" required></textarea>
+        <form class="contacto animate__animated animate__backInRight">
 
-            <br>
-            <br>
-            <p class="contact-email">Dejame tu correo:</p>
-            <input placeholder="Enter your email" class="input__email" name="email" type="email" required>
-            <button class="button">enviar</button> 
-        </div>
+            <div class="form__input">
+                <label for="">Nombre</label>
+                <input type="text" placeholder="Nombre y apellido">
+            </div>
 
-        <footer class="nothome">
+            <div class="form__input">
+                <label for="">Email</label>
+                <input type="email" placeholder="ejemplo@gmail.com">
+            </div>
+
+            <div class="form__textarea">
+                <label for="">Mensaje</label>
+                <textarea placeholder="0/1000"></textarea>
+            </div>
+               
+         </form>
+        
+        <footer>
             <p>© 2024 Franco Gimenez. Todos los derechos reservados.</p>
         </footer>
 
