@@ -23,6 +23,6 @@ urlpatterns = [
     path('about/', views.about, name="about"),
     path('portfolio/', views.portfolio, name="portfolio"),
     path('contact/', views.contact, name="contact"),
-
+    path('thanks/', views.thanks, name="thanks"),  # Nueva ruta de agradecimiento
     path('admin/', admin.site.urls),
 ]

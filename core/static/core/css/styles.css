@@ -387,8 +387,8 @@ footer p {
   animation-duration: 1s;
 }
 
-
 /*############CONTENIDO CONTACTO###############*/
+
 
 
 
@@ -420,11 +420,14 @@ footer p {
 
 /* Media queries para dispositivos móviles */
 @media only screen and (max-width: 1366px){
+  .foto{
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
   .ffoto.animate__animated.animate__backInRight{
       margin-right: 3vw;
       width: 400px;
       height: auto;
-      margin-left: 30%;
       margin-top: 60px;
   }
 
@@ -432,8 +435,7 @@ footer p {
     margin-right: 2vw;
     width: 700px;
     height: auto;
-    margin-left: 5%;
-    margin-top: 105px;
+    margin-top: 30px;
   }
 
   .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
@@ -442,8 +444,7 @@ footer p {
   }
 
   .card{
-      margin-top: 72vh;
-      margin-left: 5vw;
+      margin-top: 20px;
   }
 
   footer{
