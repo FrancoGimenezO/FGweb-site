@@ -1,0 +1,455 @@
+body {
+  color: white;
+  font-family: sans-serif;
+  background: linear-gradient(black, rgb(26, 37, 70));
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+
+
+
+/*##########BARRA DE NAVEGACION#############*/
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  height: 20px;
+}
+
+li{
+  display: block;
+}
+
+li a {
+  margin-top: 10px;
+  padding-top: 5px;
+  margin-right: 40px;
+  font-family: sans-serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+}
+
+li a:hover{
+  color: #05ac82;
+  animation: move 2s ease-in-out infinite;
+  font-size: 16px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.226);
+}
+/*##########BARRA DE NAVEGACION#############*/
+
+
+
+
+
+
+
+
+
+
+/*############CONTENIDO HOME###############*/
+
+/* Ajuste del estilo del contenido de la página */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1b1b1b; /* Fondo gris oscuro */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Imagen */
+.foto {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ffoto {
+  max-width: 150px; /* Ajuste de tamaño de la imagen */
+  border-radius: 50%; /* Imagen circular */
+}
+
+/* Texto */
+.texto {
+  text-align: center;
+  margin: 20px;
+}
+
+h1, h2, p {
+  margin: 10px 0;
+}
+
+/* Botón de descarga */
+.download-button {
+  background: #007BFF; /* Fondo azul */
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.download-button:hover {
+  background: #0056b3; /* Fondo azul más oscuro al pasar el mouse */
+}
+
+.download-button .docs, .download-button .download {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.download-button .css-i6dzq1 {
+  margin-right: 8px;
+}
+
+/* Redes sociales */
+.card {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-link1, .social-link2 {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social-link1:hover, .social-link2:hover {
+  color: #007BFF; /* Color azul al pasar el mouse */
+}
+
+/* Animaciones */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+
+.animate__animated {
+  animation-duration: 1s;
+}
+
+/*############CONTENIDO HOME###############*/
+
+
+
+
+
+
+
+
+/*############CONTENIDO ABOUT###############*/
+/* Aplica Flexbox al contenedor */
+.head__about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+/* Estilo para el texto "Sobre Mí" */
+.aboutext.animate__animated.animate__backInLeft {
+  color: #fff; /* Texto blanco para contraste */
+  font-size: 2rem; /* Tamaño de fuente legible */
+  font-family: Arial, sans-serif; /* Fuente estándar */
+  text-align: center;
+  margin-right: 20px; /* Espaciado reducido */
+  opacity: 0.9; /* Opacidad reducida para efecto de sombra */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+/* Estilo para la imagen "Sobre Mí" */
+.aboutimg.animate__animated.animate__backInUp {
+  width: 150px; /* Tamaño de imagen ajustado */
+  height: auto;
+  border-radius: 50%; /* Borde circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+.card__about {
+  margin-top: 50%;
+  position: relative;
+  width: 50%;
+  padding-right: 12.5px;
+  padding-left: 12.5px;
+  margin: 0 auto; /* Centra horizontalmente el div */
+}
+
+.hola__about.animate__animated.animate__backInLeft,
+.filo__about.animate__animated.animate__backInLeft,
+.hablemos__about.animate__animated.animate__backInLeft,
+.exp__about.animate__animated.animate__backInRight,
+.hab__about.animate__animated.animate__backInRight{
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: transparent;
+  box-shadow: 0 0 20px rgba(253, 253, 253, 0.1);
+  border-radius: 15px;
+  color: white;
+  padding: 20px 10px;
+}
+
+p{
+  text-align: center;
+}
+
+/*############CONTENIDO ABOUT###############*/
+
+
+
+
+
+
+/*############CONTENIDO PORTFOLIO###############*/
+
+/* Estilo general */
+/* Estilo de la sección "Sobre mí" */
+/* #about {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+#about h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+#about p {
+  font-size: 1.2em;
+  line-height: 1.6;
+} */
+
+/* Estilo de la sección "Proyectos" */
+#projects {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(253, 253, 253, 0.1);
+  color: black;
+}
+
+#projects h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.h3bg {
+  position: relative; /* Añadido para que .h3text se posicione correctamente */
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(transparent, #000), url(../img/portweb.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.h3text {
+  position: absolute; /* Añadido para posicionar el texto dentro de .h3bg */
+  top: 50%; /* Puedes ajustar el porcentaje según sea necesario */
+  left: 2%; /* Puedes ajustar el porcentaje según sea necesario */
+  font-size: 1.5em;
+  color: #fff;
+  box-sizing: border-box;
+  max-width: 96%; /* Este valor asegura que el texto no sobrepase los límites del contenedor */
+}
+
+.project p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* Estilo del pie de página */
+footer {
+  border-top: 1px solid rgba(103, 103, 103, 0.092);
+  background-color: #3333334c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  font-size: 17px;
+  margin: 0;
+}
+
+/* Animaciones */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+
+.animate__animated {
+  animation-duration: 1s;
+}
+
+
+/*############CONTENIDO PORTFOLIO###############*/
+
+
+
+
+/*############CONTENIDO CONTACTO###############*/
+
+/* Estilo del formulario de contacto */
+.contacto {
+  box-sizing: border-box;
+  width: 30%;
+  padding: 15px;
+  margin: 5% auto;
+  background-color: #3333334c; /* Fondo semitransparente */
+  border-radius: 8px;
+  font-family: sans-serif;
+  box-shadow: 0 0 25px 0px rgba(213, 216, 226, 0.267);
+}
+
+/* Estilo de los campos del formulario */
+.form__input, .form__textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Añadir un borde al campo */
+  font-family: sans-serif;
+  color: white;
+  background-color: #e4e0e000;
+}
+
+/* Estilo específico para textarea */
+textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+/* Estilo de las etiquetas del formulario */
+label {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  padding: 10px 0;
+  line-height: 2;
+  font-size: 1em;
+  display: block;
+}
+
+/* Estilo del pie de página */
+footer {
+  border-top: 1px solid rgba(103, 103, 103, 0.092);
+  background-color: #3333334c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 17px;
+  margin: 0;
+}
+
+/* Animaciones */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+
+.animate__animated {
+  animation-duration: 1s;
+}
+
+/*############CONTENIDO CONTACTO###############*/
+
+
+
+
+
+
+
+
+
+.nothome{
+  border-top: 1px solid rgba(103, 103, 103, 0.092);
+  background-color: #3333334c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+  box-sizing: border-box;
+  bottom: 0;
+}
+
+
+
+
+
+
+
+/*############CONTENIDO RESPONSIVE###############*/
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 1366px){
+  .foto{
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .ffoto.animate__animated.animate__backInRight{
+      margin-right: 3vw;
+      width: 400px;
+      height: auto;
+      margin-top: 60px;
+  }
+
+  .texto.animate__animated.animate__backInLeft{
+    margin-right: 2vw;
+    width: 700px;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+      width: 20%;
+      height: 75%;
+  }
+
+  .card{
+      margin-top: 20px;
+  }
+
+  footer{
+    padding: 0;
+  }
+}
+
+/*############CONTENIDO RESPONSIVE###############*/
