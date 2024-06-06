@@ -1,7 +1,6 @@
-from django.shortcuts import render, HttpResponseRedirect, redirect
-from django.core.mail import send_mail
+from django.shortcuts import render, redirect
+from django.core.mail import EmailMessage
 from .forms import ContactForm
-from .models import Contact
 import os
 
 def home(request):
@@ -28,16 +27,17 @@ def contact(request):
             email_user = os.getenv('EMAIL_HOST_USER')
             email_password = os.getenv('EMAIL_HOST_PASSWORD')
             
-            # Envía el correo electrónico
-            send_mail(
-                f'Mensaje de {name}',
-                message,
-                email_user,  # El correo electrónico del remitente
-                ['francogz19980427@gmail.com'],  # Tu dirección de correo electrónico
-                fail_silently=False,
-                auth_user=email_user,  # Utiliza las credenciales definidas en las variables de entorno
-                auth_password=email_password,
+            # Crear el correo electrónico
+            email_message = EmailMessage(
+                subject=f'Mensaje de {name}',  # Asunto del correo
+                body=message,  # Cuerpo del mensaje
+                from_email=email_user,  # Tu correo electrónico
+                to=['franco.it.dev@gmail.com'],  # Tu dirección de correo electrónico
+                headers={'Reply-To': email}  # El correo electrónico del usuario
             )
+            
+            # Enviar el correo electrónico
+            email_message.send(fail_silently=False)
             return redirect('contact')  # Redirige después de enviar el formulario
     else:
         form = ContactForm()
