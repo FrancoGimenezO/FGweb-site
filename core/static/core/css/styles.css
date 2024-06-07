@@ -1,7 +1,7 @@
 body {
   color: white;
   font-family: sans-serif;
-  background: linear-gradient(black, rgb(26, 37, 70));
+  background: linear-gradient(rgba(14, 14, 14, 0.925), rgb(26, 37, 70));
   padding: 0;
   margin: 0;
   position: relative;
@@ -17,6 +17,8 @@ ul {
   list-style: none;
   justify-content: right;
   height: 20px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 li{
@@ -181,6 +183,8 @@ h1, h2, p {
   margin-right: 20px; /* Espaciado reducido */
   opacity: 0.9; /* Opacidad reducida para efecto de sombra */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+  line-height: 1.6; /* Interlineado de 1.6 */
+  letter-spacing: 0.02em; /* Espaciado entre letras ligeramente aumentado */
 }
 
 /* Estilo para la imagen "Sobre Mí" */
@@ -230,7 +234,7 @@ p{
 
 /* Estilo de la sección "Proyectos" */
 #projects {
-  width: 80%;
+  width: 50%;
   margin: 50px auto;
   padding: 20px;
   background-color: transparent;
@@ -244,15 +248,36 @@ p{
   margin-bottom: 15px;
 }
 
-.project {
-  margin-bottom: 30px;
+.project,.project1,.project2 {
+  padding: 10px;
+  margin-bottom: 60px;
+  border: 1px solid rgba(185, 184, 184, 0.61);
+  border-radius: 8px;
 }
 
 .h3bg {
   position: relative; /* Añadido para que .h3text se posicione correctamente */
   width: 100%;
-  height: 150px;
+  height: 200px;
   background: linear-gradient(transparent, #000), url(../img/portweb.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.h3bg1 {
+  position: relative; /* Añadido para que .h3text se posicione correctamente */
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(transparent, #000), url(../img/itmanager.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.h3bg2 {
+  position: relative; /* Añadido para que .h3text se posicione correctamente */
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(transparent, #000), url(../img/suporueno.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -267,7 +292,7 @@ p{
   max-width: 96%; /* Este valor asegura que el texto no sobrepase los límites del contenedor */
 }
 
-.project p {
+.project,.project1,.project2 p {
   font-size: 1.1em;
   line-height: 1.5;
   color: #fff;
@@ -363,7 +388,7 @@ footer {
   bottom: 0;
 }
 
-button {
+.sendcontact {
   font-family: inherit;
   font-size: 20px;
   background: royalblue;
@@ -380,31 +405,31 @@ button {
   margin: auto;
 }
 
-button span {
+.sendcontact span {
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
 }
 
-button svg {
+.sendcontact svg {
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
 }
 
-button:hover .svg-wrapper {
+.sendcontact:hover .svg-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
-button:hover svg {
+.sendcontact:hover svg {
   transform: translateX(1.2em) rotate(45deg) scale(1.1);
 }
 
-button:hover span {
+.sendcontact:hover span {
   transform: translateX(5em);
 }
 
-button:active {
+.sendcontact:active {
   transform: scale(0.95);
 }
 
