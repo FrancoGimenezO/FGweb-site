@@ -42,6 +42,3 @@ def contact(request):
     else:
         form = ContactForm()
     return render(request, 'core/contact.html', {'form': form})
-
-def thanks(request):
-    return render(request, "core/thanks.html")
