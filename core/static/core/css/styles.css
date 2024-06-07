@@ -31,12 +31,13 @@ li a {
   text-decoration: none;
   letter-spacing: 1px;
   color: rgb(255, 255, 255);
+  font-size: 20px;
 }
 
 li a:hover{
   color: #05ac82;
   animation: move 2s ease-in-out infinite;
-  font-size: 16px;
+  font-size: 22px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.226);
 }
 /*##########BARRA DE NAVEGACION#############*/
@@ -74,8 +75,9 @@ body {
 }
 
 .ffoto {
-  max-width: 150px; /* Ajuste de tamaño de la imagen */
+  width: 200px; /* Ajuste de tamaño de la imagen */
   border-radius: 50%; /* Imagen circular */
+  margin-top: 40px;
 }
 
 /* Texto */
@@ -217,28 +219,6 @@ p{
 
 
 /*############CONTENIDO PORTFOLIO###############*/
-
-/* Estilo general */
-/* Estilo de la sección "Sobre mí" */
-/* #about {
-  width: 80%;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  color: black;
-}
-
-#about h2 {
-  font-size: 2em;
-  margin-bottom: 15px;
-}
-
-#about p {
-  font-size: 1.2em;
-  line-height: 1.6;
-} */
 
 /* Estilo de la sección "Proyectos" */
 #projects {
